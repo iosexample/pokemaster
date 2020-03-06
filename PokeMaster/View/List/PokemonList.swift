@@ -9,13 +9,18 @@
 import SwiftUI
 
 struct PokemonList: View {
-  @State var searchText: String = ""
+  /*@State var searchText: String = ""
   
   var body: some View {
     ScrollView {
       TextField("搜索", text: $searchText)
         .frame(height: 40)
         .padding(.horizontal, 25)
+    }
+  }*/
+  var body: some View {
+    List(PokemonViewModel.all) { pokemon in
+      PokemonInfoRow(model: pokemon, expanded: false)
     }
   }
 }
