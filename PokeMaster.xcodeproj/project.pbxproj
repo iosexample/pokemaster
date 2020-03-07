@@ -100,6 +100,9 @@
 		F680CBD12411618D008F022C /* Ability.swift in Sources */ = {isa = PBXBuildFile; fileRef = F680CBCB2411618D008F022C /* Ability.swift */; };
 		F680CBD22411618D008F022C /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = F680CBCC2411618D008F022C /* Pokemon.swift */; };
 		F680CBD32411618D008F022C /* PokemonSpecies.swift in Sources */ = {isa = PBXBuildFile; fileRef = F680CBCD2411618D008F022C /* PokemonSpecies.swift */; };
+		F6DE048B24131B9000105BF1 /* PokemonInfoPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DE048A24131B9000105BF1 /* PokemonInfoPanel.swift */; };
+		F6DE048D24138E7100105BF1 /* PokemonInfoPanelAbilityList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DE048C24138E7100105BF1 /* PokemonInfoPanelAbilityList.swift */; };
+		F6DE0490241396D900105BF1 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DE048F241396D900105BF1 /* BlurView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -198,6 +201,9 @@
 		F680CBCB2411618D008F022C /* Ability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ability.swift; sourceTree = "<group>"; };
 		F680CBCC2411618D008F022C /* Pokemon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
 		F680CBCD2411618D008F022C /* PokemonSpecies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokemonSpecies.swift; sourceTree = "<group>"; };
+		F6DE048A24131B9000105BF1 /* PokemonInfoPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonInfoPanel.swift; sourceTree = "<group>"; };
+		F6DE048C24138E7100105BF1 /* PokemonInfoPanelAbilityList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonInfoPanelAbilityList.swift; sourceTree = "<group>"; };
+		F6DE048F241396D900105BF1 /* BlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,6 +220,8 @@
 		F65B49572411FE8F0052E0D8 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F6DE048E241396C400105BF1 /* Utils */,
+				F6DE048924131B7F00105BF1 /* Panel */,
 				F65B49582411FE9F0052E0D8 /* List */,
 			);
 			path = View;
@@ -425,6 +433,23 @@
 			path = "../../../../../../Downloads/SwiftUILearn-master/PokeMaster-Starter/PokeMaster/Utils";
 			sourceTree = "<group>";
 		};
+		F6DE048924131B7F00105BF1 /* Panel */ = {
+			isa = PBXGroup;
+			children = (
+				F6DE048A24131B9000105BF1 /* PokemonInfoPanel.swift */,
+				F6DE048C24138E7100105BF1 /* PokemonInfoPanelAbilityList.swift */,
+			);
+			path = Panel;
+			sourceTree = "<group>";
+		};
+		F6DE048E241396C400105BF1 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F6DE048F241396D900105BF1 /* BlurView.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -569,9 +594,12 @@
 				F65B496424121BAE0052E0D8 /* Store.swift in Sources */,
 				F680CB3224116040008F022C /* SceneDelegate.swift in Sources */,
 				F65B495A2411FEDB0052E0D8 /* PokemonRootView.swift in Sources */,
+				F6DE048D24138E7100105BF1 /* PokemonInfoPanelAbilityList.swift in Sources */,
 				F65B496724121C260052E0D8 /* AppState.swift in Sources */,
 				F65B49602412167B0052E0D8 /* Sample.swift in Sources */,
+				F6DE048B24131B9000105BF1 /* PokemonInfoPanel.swift in Sources */,
 				F680CBD12411618D008F022C /* Ability.swift in Sources */,
+				F6DE0490241396D900105BF1 /* BlurView.swift in Sources */,
 				F65B497224121CD20052E0D8 /* UserDefaultsStorage.swift in Sources */,
 				F680CBD02411618D008F022C /* Language.swift in Sources */,
 				F680CBD32411618D008F022C /* PokemonSpecies.swift in Sources */,
@@ -723,6 +751,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"PokeMaster/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = PokeMaster/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -742,6 +771,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"PokeMaster/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = PokeMaster/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
